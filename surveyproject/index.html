@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+<body>
+    <div>
+        <h1 id='title'>
+            Bitcoin holding survey form
+        </h1>
+        <p id="description">Thank you for participation <span> &#x1F60A;</span></p>
+    </div id="body">
+    <form  id="survey-form" action="" method="post">
+        
+            <label for="Firstname">FirstName</label>
+            <input type="text" name="Firstname" id="name"class="form-control" placeholder="Firstname" Required>
+        
+            <label for="Lastname">LastName</label>
+            <input type="text" name="Lastname" id="lname"class="form-control" placeholder="Lastname" Required>
+        
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" Required>
+        
+        
+            <label for="age">Age</label>
+            <input type="number" id="number" name="Age" min=18 max=100 placeholder="Age">
+        
+            <label for="city">Which city do you belongs to</label>
+            <input type="text" id="city" name="city" max=30 placeholder="Enter city name">
+
+            <label for="holding">Are you currently holding bitcoin?</label>
+            <input type="radio" name="holding" value="Yes" id="holding">yes
+            <input type="radio" name="holding" value="No" id="holding">No
+            
+            <label >
+                If yes,how many bitcoins are you holding? <span>(optional)</span>
+            </label>
+            <input type="number" id="num" min=0.00000000000000>
+
+            <label >Any Comments <span>(optional)</span></label>
+            <textarea name="comment" id="comment" cols="20" rows="5">add your comment here</textarea>
+
+            <input type="submit" id="submit" value="submit">
+
+            
+        </div>
+       
+    </form>
+    
+
+
+</body>
+</html>
